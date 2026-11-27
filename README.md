@@ -47,3 +47,5 @@ python3 -m http.server 8000
 ## License
 
 GPL-3.0. See `LICENSE`.
+
+When you change `style.css` or `script.js`, bump the `?v=` value on its `<link>`/`<script>` tag in `index.html` (and `404.html`) so browsers don't keep the old cached copy.
