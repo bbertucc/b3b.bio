@@ -35,7 +35,7 @@ python3 -m http.server 8000
 ## Hosting on GitHub Pages
 
 1. Merge this into `main`.
-2. In the repo, go to **Settings → Pages → Build and deployment**. Set **Source** to "Deploy from a branch", then pick **Branch** `main` and folder `/ (root)`.
+2. In the repo, go to **Settings → Pages → Build and deployment**. Set **Source** to "Deploy from a branch" (not "GitHub Actions": this repo has no workflow), then pick **Branch** `main` and folder `/ (root)`.
 3. Under **Custom domain**, enter `b3b.bio` (the `CNAME` file already does this). Once DNS resolves, turn on **Enforce HTTPS**.
 4. At your DNS provider, point the apex domain at GitHub Pages:
    - `A` records for `b3b.bio`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
