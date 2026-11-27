@@ -30,7 +30,7 @@
       var status = document.getElementById('copy-status');
       var done = function () {
         label.textContent = 'Copied!';
-        status.textContent = 'Link copied to clipboard';
+        status.textContent = 'Link copied';
         setTimeout(function () { label.textContent = 'Copy link'; status.textContent = ''; }, 2000);
       };
       if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () {});
