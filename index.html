@@ -35,7 +35,7 @@
   <link rel="me" href="https://x.com/bbertucc">
   <link rel="me" href="https://www.linkedin.com/in/blake1111">
   <link rel="me" href="https://bsky.app/profile/b3b.bio">
-  <link rel="stylesheet" href="style.css?v=vcf1">
+  <link rel="stylesheet" href="style.css?v=pay3">
 
   <script type="application/ld+json">
   {
@@ -99,7 +99,7 @@
       <div class="actions">
         <a class="button button--primary" href="https://philosophers.group/">Read my blog</a>
         <a class="button button--primary" href="https://docs.google.com/document/d/1u48mnlhNHiqegyAvbfPsEX5JWEaWqIml7_xhYKc1ISY/edit">View my CV</a>
-        <a class="button" href="blake.vcf" type="text/vcard">Add to contacts</a>
+        <a class="button" href="blake.vcf" type="text/vcard">Add to contacts (vCard)</a>
         <a class="button" href="mailto:veneer.bulrush1i@icloud.com?subject=Hello%20from%20b3b.bio">Email Blake</a>
         <button type="button" class="button" data-open="money" aria-haspopup="dialog">Send money</button>
       </div>
@@ -186,17 +186,31 @@
         <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.5"/></svg>
       </button>
     </div>
-    <div class="qr qr--static">
-      <img src="assets/zelle-qr.svg" width="200" height="200" alt="Zelle QR code">
-      <p class="qr__title">Pay with Zelle</p>
-      <p class="qr__hint">Scan in your banking app to pay Blake Bertuccelli-Booth.</p>
+    <div class="pay">
+      <h3 id="pay-zelle" class="pay__title">Zelle</h3>
+      <div class="qr qr--static">
+        <img src="assets/zelle-qr.svg" width="200" height="200" alt="Zelle QR code">
+        <p class="qr__hint">Scan in your banking app to pay Blake Bertuccelli-Booth.</p>
+      </div>
+      <a class="copy" href="https://enroll.zellepay.com/qr-codes?data=eyJ0b2tlbiI6IjE1MDQzNzczNjUwIiwibmFtZSI6IkJsYWtlIn0=">
+        <span class="copy__url" aria-hidden="true">On your phone?</span>
+        <span class="copy__action">Open in Zelle</span>
+      </a>
     </div>
-    <a class="copy" href="https://enroll.zellepay.com/qr-codes?data=eyJ0b2tlbiI6IjE1MDQzNzczNjUwIiwibmFtZSI6IkJsYWtlIn0=">
-      <span class="copy__url" aria-hidden="true">On your phone?</span>
-      <span class="copy__action">Open in Zelle</span>
-    </a>
+
+    <div class="pay">
+      <h3 id="pay-cashapp" class="pay__title">Cash App</h3>
+      <div class="qr qr--static">
+        <img src="assets/cashapp-qr.svg" width="200" height="200" alt="Cash App QR code">
+        <p class="qr__hint">Scan with your phone camera to pay $BlakeBertuccelli.</p>
+      </div>
+      <a class="copy" href="https://cash.app/$BlakeBertuccelli">
+        <span class="copy__url" aria-hidden="true">$BlakeBertuccelli</span>
+        <span class="copy__action">Open in Cash App</span>
+      </a>
+    </div>
   </dialog>
 
-  <script src="script.js?v=vcf1" defer></script>
+  <script src="script.js?v=pay3" defer></script>
 </body>
 </html>
