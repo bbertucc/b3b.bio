@@ -219,6 +219,10 @@ h1 {
   padding: 24px; background: #f6f7f7; border-radius: 8px; margin-bottom: 16px;
 }
 .qr img { width: 200px; height: 200px; }
+.qr--static { text-align: center; }
+.qr__title { font-weight: 600; }
+.qr__hint { font-size: 14px; color: var(--muted); }
+a.copy { text-decoration: none; }
 
 .drawer__links li { border-bottom: 1px solid var(--border); }
 .drawer__links a {

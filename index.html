@@ -213,13 +213,15 @@
         <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.5"/></svg>
       </button>
     </div>
-    <div class="account">
-      <svg class="account__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M3.5 7h17v10h-17zM3.5 10h17"/></svg>
-      <div>
-        <span class="account__label">Venmo</span>
-        <a href="https://account.venmo.com/u/philosophers" rel="noopener" target="_blank">account.venmo.com/u/philosophers</a>
-      </div>
+    <div class="qr qr--static">
+      <img src="assets/zelle-qr.svg" width="200" height="200" alt="Zelle QR code to pay Blake Bertuccelli-Booth">
+      <span class="qr__title">Send money with Zelle</span>
+      <span class="qr__hint">Scan in your banking app to pay Blake Bertuccelli-Booth.</span>
     </div>
+    <a class="copy" href="https://enroll.zellepay.com/qr-codes?data=eyJ0b2tlbiI6IjE1MDQzNzczNjUwIiwibmFtZSI6IkJsYWtlIn0=" rel="noopener" target="_blank">
+      <span class="copy__url">On your phone?</span>
+      <span class="copy__action">Open in Zelle <span aria-hidden="true">↗</span></span>
+    </a>
   </dialog>
 
   <script src="script.js" defer></script>
