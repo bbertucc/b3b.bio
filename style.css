@@ -144,6 +144,9 @@ h1 {
 }
 .button:hover { background: #f0f4fd; }
 .button:hover, .button:visited, .button:active { color: var(--link); text-decoration: none; }
+.button--primary { grid-column: 1 / -1; background: var(--link); color: #fff; font-weight: 600; min-height: 48px; }
+.button--primary:hover, .button--primary:visited, .button--primary:active { background: var(--link-hover); border-color: var(--link-hover); color: #fff; }
+.button--primary:focus-visible { outline-offset: 3px; }
 
 /* Links card */
 .link-list, .account-list, .drawer__links { list-style: none; margin: 0; padding: 0; }
