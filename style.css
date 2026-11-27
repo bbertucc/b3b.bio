@@ -55,6 +55,7 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-bottom: 48px;
 }
 
 .card {
@@ -179,17 +180,6 @@ h1 {
 .account__label { display: block; font-weight: 600; font-size: 14px; line-height: 24px; }
 .account a { word-break: break-word; }
 
-/* Footer */
-.footer {
-  margin-top: 48px;
-  padding: 20px 16px;
-  background: #fff;
-  text-align: center;
-  font-size: 14px;
-  color: var(--muted);
-}
-.footer p { margin: 0; }
-
 /* Drawers (native <dialog>) */
 .drawer {
   margin: 0 0 0 auto;
@@ -246,7 +236,7 @@ h1 {
 
 /* Small screens */
 @media (max-width: 600px) {
-  .profile { margin-top: 16px; gap: 16px; }
+  .profile { margin-top: 16px; gap: 16px; padding-bottom: 16px; }
   .card { padding: 24px; }
   .card__header-image { margin: 0 -24px; height: 112px; }
   .avatar { width: 120px; height: 120px; margin-top: -80px; }
