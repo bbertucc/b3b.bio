@@ -1,6 +1,5 @@
-// Open/close the Share, Contact and Send money drawers (native <dialog>),
-// and copy the profile link. The page works without this script; the
-// drawers just won't open.
+// Opens and closes the Send money drawer (native <dialog>). Without this
+// script the page still works; the drawer just won't open.
 (function () {
   document.querySelectorAll('[data-open]').forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -22,18 +21,4 @@
     });
   });
 
-  var copy = document.getElementById('copy-link');
-  if (copy) {
-    copy.addEventListener('click', function () {
-      var url = copy.getAttribute('data-url');
-      var label = document.getElementById('copy-label');
-      var status = document.getElementById('copy-status');
-      var done = function () {
-        label.textContent = 'Copied!';
-        status.textContent = 'Link copied';
-        setTimeout(function () { label.textContent = 'Copy link'; status.textContent = ''; }, 2000);
-      };
-      if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () {});
-    });
-  }
 })();

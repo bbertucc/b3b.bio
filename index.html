@@ -35,7 +35,7 @@
   <link rel="me" href="https://x.com/bbertucc">
   <link rel="me" href="https://www.linkedin.com/in/blake1111">
   <link rel="me" href="https://bsky.app/profile/b3b.bio">
-  <link rel="stylesheet" href="style.css?v=blog1">
+  <link rel="stylesheet" href="style.css?v=vcf1">
 
   <script type="application/ld+json">
   {
@@ -99,7 +99,7 @@
       <div class="actions">
         <a class="button button--primary" href="https://philosophers.group/">Read my blog</a>
         <a class="button button--primary" href="https://docs.google.com/document/d/1u48mnlhNHiqegyAvbfPsEX5JWEaWqIml7_xhYKc1ISY/edit">View my CV</a>
-        <button type="button" class="button" data-open="share" aria-haspopup="dialog">Share</button>
+        <a class="button" href="blake.vcf" type="text/vcard">Add to contacts</a>
         <a class="button" href="mailto:veneer.bulrush1i@icloud.com?subject=Hello%20from%20b3b.bio">Email Blake</a>
         <button type="button" class="button" data-open="money" aria-haspopup="dialog">Send money</button>
       </div>
@@ -178,29 +178,6 @@
   </main>
 
 
-  <!-- Share -->
-  <dialog class="drawer" id="share" aria-labelledby="share-title">
-    <div class="drawer__header">
-      <h2 id="share-title">Share profile</h2>
-      <button type="button" class="drawer__close" data-close aria-label="Close">
-        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.5"/></svg>
-      </button>
-    </div>
-    <a class="qr" href="assets/qr.png" download="blake-bertuccelli-booth-qr.png">
-      <img src="assets/qr.svg" width="200" height="200" alt="">
-      <span>Download QR code</span>
-    </a>
-    <ul class="drawer__links">
-      <li><a href="mailto:?subject=Blake%20Bertuccelli-Booth&amp;body=Check%20out%20Blake%20Bertuccelli-Booth%27s%20profile%3A%20https%3A%2F%2Fb3b.bio%2F">Share via email <span aria-hidden="true">→</span></a></li>
-      <li><a href="blake.vcf" download>Add to contacts (vCard) <span aria-hidden="true">→</span></a></li>
-    </ul>
-    <button type="button" class="copy" id="copy-link" data-url="https://b3b.bio/">
-      <span class="copy__url" aria-hidden="true">b3b.bio</span>
-      <span class="copy__action"><span id="copy-label">Copy link</span><span class="sr-only"> to b3b.bio</span></span>
-    </button>
-    <p class="sr-only" role="status" id="copy-status"></p>
-  </dialog>
-
   <!-- Send money -->
   <dialog class="drawer" id="money" aria-labelledby="money-title">
     <div class="drawer__header">
@@ -220,6 +197,6 @@
     </a>
   </dialog>
 
-  <script src="script.js?v=blog1" defer></script>
+  <script src="script.js?v=vcf1" defer></script>
 </body>
 </html>

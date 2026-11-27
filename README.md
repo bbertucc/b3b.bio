@@ -6,11 +6,11 @@ Blake Bertuccelli-Booth's profile page. It's plain HTML and CSS with a tiny bit 
 
 | File | What it is |
 | --- | --- |
-| `index.html` | The whole profile: about card, links, accounts, and the Share / Contact / Send money drawers |
+| `index.html` | The whole profile: about card, blog/CV/contacts/email buttons, links, accounts, and the Send money drawer |
 | `style.css` | All styles |
-| `script.js` | Opens and closes the drawers and handles "Copy link". The page still reads fine without it |
-| `blake.vcf` | vCard for "Add to contacts" |
-| `assets/` | Avatar, header/background image, link previews, QR code (`qr.svg` shown, `qr.png` downloaded) |
+| `script.js` | Opens and closes the Send money drawer. The page still reads fine without it |
+| `blake.vcf` | vCard behind the "Add to contacts" button (keep its CRLF line endings) |
+| `assets/` | Avatar, header/background image, link previews, Zelle QR code (`zelle-qr.svg`), social share image (`og.jpg`, 1200×630) |
 | `CNAME` | Custom domain for GitHub Pages (`b3b.bio`) |
 | `404.html` | Not-found page |
 | `.nojekyll` | Serves files as-is (skips Jekyll) |
@@ -18,13 +18,6 @@ Blake Bertuccelli-Booth's profile page. It's plain HTML and CSS with a tiny bit 
 ## Editing
 
 Edit `index.html` directly. To add a link, copy one `<li class="link-item">` block and drop a 16:9 preview image in `assets/`.
-
-To make a new QR code (only needed if the URL changes):
-
-```bash
-npx qrcode -t svg -o assets/qr.svg https://b3b.bio
-npx qrcode -w 600 -o assets/qr.png https://b3b.bio
-```
 
 Preview it locally:
 
